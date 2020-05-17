@@ -23,7 +23,7 @@
                 Digite sua idade:
                 <input type="text" name="idade" value="" />
                 <br>
-                Digite seu sexo:
+                Selecione seu sexo:
                 <input type="radio" name="sexo" value="Masculino" /> M
                 <input type="radio" name="sexo" value="Feminino" /> F
                 <br>
