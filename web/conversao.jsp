@@ -36,7 +36,6 @@
                 <br>
                 <input type="radio" name="unidadeConversao" value="Celsius" /> Celsius
                 <input type="radio" name="unidadeConversao" value="Fahrenheit" /> Fahrenheit
-                <input type="radio" name="unidadeConversao" value="Centímetro" /> Centímetro
                 <input type="radio" name="unidadeConversao" value="Kelvin" /> Kelvin
                 <br>
                 <br>
@@ -56,7 +55,6 @@
                 <br>
                 <input type="radio" name="unidadeDesejada" value="Celsius" /> Celsius
                 <input type="radio" name="unidadeDesejada" value="Fahrenheit" /> Fahrenheit
-                <input type="radio" name="unidadeDesejada" value="Centímetro" /> Centímetro
                 <input type="radio" name="unidadeDesejada" value="Kelvin" /> Kelvin
                 <br>
                 <input type="submit" value="Enviar" />
