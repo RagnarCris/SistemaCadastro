@@ -13,8 +13,8 @@ public class Pessoa {
     private String nome;
     private String sexo;
     private int idade;
-    private double peso;
-    private double altura;
+    private float peso;
+    private float altura;
 
     public Pessoa() {
         nome = null;
@@ -69,28 +69,28 @@ public class Pessoa {
     /**
      * @return the peso
      */
-    public double getPeso() {
+    public float getPeso() {
         return peso;
     }
 
     /**
      * @param peso the peso to set
      */
-    public void setPeso(double peso) {
+    public void setPeso(float peso) {
         this.peso = peso;
     }
 
     /**
      * @return the altura
      */
-    public double getAltura() {
+    public float getAltura() {
         return altura;
     }
 
     /**
      * @param altura the altura to set
      */
-    public void setAltura(double altura) {
+    public void setAltura(float altura) {
         this.altura = altura;
     }
     

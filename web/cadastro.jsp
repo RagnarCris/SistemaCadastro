@@ -27,10 +27,10 @@
                 <input type="radio" name="sexo" value="Masculino" /> M
                 <input type="radio" name="sexo" value="Feminino" /> F
                 <br>
-                Digite seu peso:
+                Digite seu peso em quilos (ex: 60):
                 <input type="text" name="peso" value="" />
                 <br>
-                Digite sua altura:
+                Digite sua altura em metros (ex: 1.70):
                 <input type="text" name="altura" value="" />
                 <br>
                 <input type="submit" value="Enviar" />

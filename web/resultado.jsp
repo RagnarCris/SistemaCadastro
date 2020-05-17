@@ -22,16 +22,17 @@
         <jsp:setProperty name="mybean" property="peso"/>
         <jsp:setProperty name="mybean" property="altura"/>
         
-        <p>Nome: <jsp:getProperty name="mybean" property="nome" /></p>
-        <p>Idade <jsp:getProperty name="mybean" property="idade" /></p>
-        <p>Sexo: <jsp:getProperty name="mybean" property="sexo" /></p>
-        <p>Peso: <jsp:getProperty name="mybean" property="peso" /></p>
-        <p>Altura: <jsp:getProperty name="mybean" property="altura" /></p>
-        <%!public double calculaIMC(double peso, double altura){
+        <h3>Nome: <jsp:getProperty name="mybean" property="nome" /></h3>
+        <h3>Idade <jsp:getProperty name="mybean" property="idade" /></h3>
+        <h3>Sexo: <jsp:getProperty name="mybean" property="sexo" /></h3>
+        <h3>Peso: <jsp:getProperty name="mybean" property="peso" /></h3>
+        <h3>Altura: <jsp:getProperty name="mybean" property="altura" /></h3>
+        <%!public float calculaIMC(float peso, float altura){
             altura = altura*altura;
+            float imc = peso/altura;
             return peso/altura;
         }%>
         
-        <p><b>IMC: </b> <%out.println(calculaIMC(mybean.getPeso(),mybean.getAltura()));%>
+        <h2><b>IMC: </b> <%out.println(calculaIMC(mybean.getPeso(),mybean.getAltura()));%>
     </body>
 </html>
