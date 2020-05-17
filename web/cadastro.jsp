@@ -28,10 +28,10 @@
                 <input type="radio" name="sexo" value="Feminino" /> F
                 <br>
                 Digite seu peso:
-                <input type="text" name="nome" value="" />
+                <input type="text" name="peso" value="" />
                 <br>
                 Digite sua altura:
-                <input type="text" name="nome" value="" />
+                <input type="text" name="altura" value="" />
                 <br>
                 <input type="submit" value="Enviar" />
             </form>
