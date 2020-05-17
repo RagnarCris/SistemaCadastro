@@ -15,6 +15,7 @@ public class Pessoa {
     private int idade;
     private float peso;
     private float altura;
+    private float imc;
 
     public Pessoa() {
         nome = null;
@@ -22,6 +23,7 @@ public class Pessoa {
         idade = 0;
         peso = 0;
         altura = 0;
+        imc = 0;
     }
 
     /**
@@ -94,6 +96,13 @@ public class Pessoa {
         this.altura = altura;
     }
     
-    
-    
+     public float getImc() {
+        return imc;
+    }
+
+    public float calculaIMC(){
+        float alturaQuadrado = altura*altura;
+        imc = peso/alturaQuadrado;
+        return imc;
+    }
 }

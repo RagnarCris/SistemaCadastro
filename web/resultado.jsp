@@ -27,46 +27,29 @@
         <h3>Sexo: <jsp:getProperty name="mybean" property="sexo" /></h3>
         <h3>Peso: <jsp:getProperty name="mybean" property="peso" /></h3>
         <h3>Altura: <jsp:getProperty name="mybean" property="altura" /></h3>
-        <%!public float calculaIMC(float peso, float altura){
-            altura = altura*altura;
-            float imc = peso/altura;
-            return peso/altura;
-        }%>
+        <%!%>
         
-        <h2><b>IMC: </b> <%out.println(calculaIMC(mybean.getPeso(),mybean.getAltura()));%>
-    
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>IMC</th>
-                        <th>Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Menos do que 18,5</td>
-                        <td>Abaixo do Peso</td>
-                    </tr>
-                    <tr>
-                        <td>Entre 18,5 e 24,9</td>
-                        <td>Peso Normal</td>
-                    </tr>
-                    <tr>
-                        <td>Entre 25 e 29,9</td>
-                        <td>Sobrepeso</td>
-                    </tr>
-                    <tr>
-                        <td>Entre 30 e 34,9</td>
-                        <td>Obesidade Grau 1</td>
-                    </tr>
-                    <tr>
-                        <td>Entre 35 e 39,9</td>
-                        <td>Obesidade Grau 2</td>
-                    </tr>
-                    <tr>
-                        <td>Mais do que 40</td>
-                        <td>Obesidade Grau 3</td>
-                    </tr>
+        <h2><b>IMC: </b> <%out.println(mybean.calculaIMC());%>
+        <h2><b>Resultado: </b> <%
+            if(mybean.getImc() < 18.5) {
+                out.println("Abaixo do Peso");
+            }
+            else if(mybean.getImc() >= 18.5 && mybean.getImc() <= 24.9) {
+                out.println("Peso Normal");
+            }
+            else if(mybean.getImc() >= 25 && mybean.getImc() <= 29.9) {
+                out.println("Sobrepeso");
+            }
+            else if(mybean.getImc() >= 30 && mybean.getImc() <= 34.9) {
+                out.println("Obesidade Grau 1");
+            }
+            else if(mybean.getImc() >= 35 && mybean.getImc() <= 39.9) {
+                out.println("Obesidade Grau 2");
+            }
+            else {
+                out.println("Obesidade Grau 3");
+            }
+            %>
                     
                 </tbody>
             </table>
