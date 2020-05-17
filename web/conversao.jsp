@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>
-            Cadastro de Pessoa
+            Conversão de medidas
         </h1>
         <h2>
             <form name="Input Form" action="resultado_conversao.jsp">
@@ -22,17 +22,46 @@
                 <input type="radio" name="tipoConversao" value="Massa" /> Massa
                 <input type="radio" name="tipoConversao" value="Temperatura" /> Temperatura
                 <br>
-                Unidade de Conversão (ex: Quilômetro):
-                <input type="text" name="unidadeConversao" value="" />
+                <br>
+                Unidade de Conversão:<br>
+                <input type="radio" name="unidadeConversao" value="Quilômetro" /> Quilômetro
+                <input type="radio" name="unidadeConversao" value="Metro" /> Metro
+                <input type="radio" name="unidadeConversao" value="Centímetro" /> Centímetro
+                <input type="radio" name="unidadeConversao" value="Milímetro" /> Milímetro
+                <br>
+                <input type="radio" name="unidadeConversao" value="Tonelada" /> Tonelada
+                <input type="radio" name="unidadeConversao" value="Quilograma" /> Quilograma
+                <input type="radio" name="unidadeConversao" value="Grama" /> Grama
+                <input type="radio" name="unidadeConversao" value="Miligrama" /> Miligrama
+                <br>
+                <input type="radio" name="unidadeConversao" value="Celsius" /> Celsius
+                <input type="radio" name="unidadeConversao" value="Fahrenheit" /> Fahrenheit
+                <input type="radio" name="unidadeConversao" value="Centímetro" /> Centímetro
+                <input type="radio" name="unidadeConversao" value="Kelvin" /> Kelvin
+                <br>
                 <br>
                 Valor (ex: 60):
                 <input type="text" name="valorConversao" value="" />
+                <br><br>
+                Unidade Desejada:<br>
+                <input type="radio" name="unidadeDesejada" value="Quilômetro" /> Quilômetro
+                <input type="radio" name="unidadeDesejada" value="Metro" /> Metro
+                <input type="radio" name="unidadeDesejada" value="Centímetro" /> Centímetro
+                <input type="radio" name="unidadeDesejada" value="Milímetro" /> Milímetro
                 <br>
-                Unidade Desejada (ex: Metro):
-                <input type="text" name="unidadeDesejada" value="" />
+                <input type="radio" name="unidadeDesejada" value="Tonelada" /> Tonelada
+                <input type="radio" name="unidadeDesejada" value="Quilograma" /> Quilograma
+                <input type="radio" name="unidadeDesejada" value="Grama" /> Grama
+                <input type="radio" name="unidadeDesejada" value="Miligrama" /> Miligrama
+                <br>
+                <input type="radio" name="unidadeDesejada" value="Celsius" /> Celsius
+                <input type="radio" name="unidadeDesejada" value="Fahrenheit" /> Fahrenheit
+                <input type="radio" name="unidadeDesejada" value="Centímetro" /> Centímetro
+                <input type="radio" name="unidadeDesejada" value="Kelvin" /> Kelvin
                 <br>
                 <input type="submit" value="Enviar" />
             </form>
         </h2>
+             
     </body>
 </html>
