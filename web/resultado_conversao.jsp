@@ -48,7 +48,37 @@
                     resultado = mybean.getValorConversao() / 10;
                 } else if (mybean.getUnidadeConversao().equals("Milímetro") && mybean.getUnidadeDesejada().equals("Metro")) {
                     resultado = mybean.getValorConversao() * 10000;
-                } else{
+                } else {
+                    out.print("Não é possível fazer essa conversão!");
+                }
+            }
+
+            if (mybean.getTipoConversao().equals("Massa")) {
+                if (mybean.getUnidadeConversao().equals("Tonelada") && mybean.getUnidadeDesejada().equals("Quilograma")) {
+                    resultado = mybean.getValorConversao() * 1000;
+                } else if (mybean.getUnidadeConversao().equals("Tonelada") && mybean.getUnidadeDesejada().equals("Grama")) {
+                    resultado = mybean.getValorConversao() * 1000000;
+                } else if (mybean.getUnidadeConversao().equals("Tonelada") && mybean.getUnidadeDesejada().equals("Miligrama")) {
+                    resultado = mybean.getValorConversao() * 1000000000;
+                } else if (mybean.getUnidadeConversao().equals("Quilograma") && mybean.getUnidadeDesejada().equals("Tonelada")) {
+                    resultado = mybean.getValorConversao() / 1000;
+                } else if (mybean.getUnidadeConversao().equals("Quilograma") && mybean.getUnidadeDesejada().equals("Grama")) {
+                    resultado = mybean.getValorConversao() * 1000;
+                } else if (mybean.getUnidadeConversao().equals("Quilograma") && mybean.getUnidadeDesejada().equals("Miligrama")) {
+                    resultado = mybean.getValorConversao() * 1000000;
+                } else if (mybean.getUnidadeConversao().equals("Grama") && mybean.getUnidadeDesejada().equals("Tonelada")) {
+                    resultado = mybean.getValorConversao() / 1000000;
+                } else if (mybean.getUnidadeConversao().equals("Grama") && mybean.getUnidadeDesejada().equals("Quilograma")) {
+                    resultado = mybean.getValorConversao() / 1000;
+                } else if (mybean.getUnidadeConversao().equals("Grama") && mybean.getUnidadeDesejada().equals("Miligrama")) {
+                    resultado = mybean.getValorConversao() * 1000;
+                } else if (mybean.getUnidadeConversao().equals("Miligrama") && mybean.getUnidadeDesejada().equals("Tonelada")) {
+                    resultado = mybean.getValorConversao() / 1000000000;
+                } else if (mybean.getUnidadeConversao().equals("Miligrama") && mybean.getUnidadeDesejada().equals("Quilograma")) {
+                    resultado = mybean.getValorConversao() / 1000000;
+                } else if (mybean.getUnidadeConversao().equals("Miligrama") && mybean.getUnidadeDesejada().equals("Grama")) {
+                    resultado = mybean.getValorConversao() / 1000;
+                } else {
                     out.print("Não é possível fazer essa conversão!");
                 }
             }
