@@ -23,7 +23,7 @@
 
         <%
             boolean verificaErro = false;
-            double resultado = 0;
+            float resultado = 0;
             if (mybean.getTipoConversao().equals("Comprimento")) {
                 if (mybean.getUnidadeConversao().equals("Quilômetro") && mybean.getUnidadeDesejada().equals("Metro")) {
                     resultado = mybean.getValorConversao() * 1000;
@@ -102,7 +102,7 @@
             
             if (mybean.getTipoConversao().equals("Temperatura")) {
                 if (mybean.getUnidadeConversao().equals("Celsius") && mybean.getUnidadeDesejada().equals("Fahrenheit")) {
-                    resultado = (mybean.getValorConversao()*(1.8)) + 32;
+                    resultado = (float)(mybean.getValorConversao()*(1.8)) + 32;
                 } else if (mybean.getUnidadeConversao().equals("Celsius") && mybean.getUnidadeDesejada().equals("Kelvin")) {
                     resultado = mybean.getValorConversao() + (float)273.15;
                 } else if (mybean.getUnidadeConversao().equals("Celsius") && mybean.getUnidadeDesejada().equals("Celsius")) {
