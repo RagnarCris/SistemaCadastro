@@ -46,7 +46,4 @@ public class Medida {
     public void setValorConversao(float valorConversao) {
         this.valorConversao = valorConversao;
     }
-    
-    
-    
 }
